@@ -1,4 +1,4 @@
-const addManager = (data) => {
+const infoManager = (data) => {
     return 
     `
     
@@ -22,7 +22,7 @@ const addManager = (data) => {
     `
 }
 
-const addEngineer = (data) => {
+const infoEngineer = (data) => {
     return
     `
     <div class="col-4-sm-12 ">
@@ -45,7 +45,7 @@ const addEngineer = (data) => {
     `
 }
 
-const addIntern = (data) => {
+const infoIntern = (data) => {
     return
     `
     
@@ -68,3 +68,40 @@ const addIntern = (data) => {
             
         `
 }
+
+const HTMLteamPage = (data) => {
+    return
+    `
+
+    <!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Team Generator</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./dist/style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="jumbotron square">
+                <div class="container text-center">
+                    <h2> The Team </h2>
+                </div>
+            </div>
+        </header>
+
+        <section class=" row justify-content-center">
+        { cards go here }
+
+        </section>
+
+    </body>
+
+</html>
+    `
+};
+
+module.exports = HTMLteamPage;
