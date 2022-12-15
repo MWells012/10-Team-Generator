@@ -1,4 +1,12 @@
 .jumbotron {
-    background-color: rgb(41, 82, 39);
+    background-color: darkolivegreen;
     color: white;
+}
+
+.card {
+    background-color: beige;
+}
+
+.card-header {
+    background-color: rgb(140, 152, 119);
 }
