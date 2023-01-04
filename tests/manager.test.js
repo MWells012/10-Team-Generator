@@ -17,7 +17,7 @@ test('test if we can get the id from the getID() method', () => {
 });
 
 test('test if we can get the email from the getEmail() method', () => {
-    expect(newManager.getEmail()).toBe('test@gmail.com');
+    expect(newManager.getEmail()).toBe('test@email.com');
 });
 
 test('test if we can get the email from the getOfficeNumber() method', () => {
