@@ -20,7 +20,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 The use of this application is to have one place that holds the name, id number, email, and some additional pieces of information depending on the role all in one spot. 
 
 # Installation
-To use this application one must clone the repository locally, run the command `npm i` in the terminal to download all the dependencies before you can run the tests or start the application in your terminal. To start the appliation in your terminal run `node index.js` and the application will start prompting you for answers to questions so you may build your team!
+To use this application one must clone the repository locally, run the command `npm i` in the terminal to download all the dependencies before you can run the tests or start the application in your terminal. To start the appliation in your terminal run `node index.js` and the application will start prompting you for answers to questions so you may build your team! If at any point you need to exit the building process you can quit your terminal with `ctrl+c`.
 
 # Testing
 Testing is crucial to making sure your code is maintainable, so tests have been written for all 4 'positions' and the tests will need to pass to move forward. To run the tests navigate to your terminal after you have installed all the dependencies and run the command `npm run test`. Your terminal will inform you if they all passed, or if they didn't pass what failed and where.
