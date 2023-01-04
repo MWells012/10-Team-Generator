@@ -3,7 +3,7 @@ const infoManager = (data) => {
     `
     
     <div class="col-4-sm-12 ">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 25rem;">
                     <div class="card-header text-center"> 
                         <h5> Name </h5>
                         <h6> Manager </h6> 
@@ -26,7 +26,7 @@ const infoEngineer = (data) => {
     return
     `
     <div class="col-4-sm-12 ">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 25rem;">
                     <div class="card-header text-center"> 
                         <h5> Name </h5>
                         <h6> Engineer </h6> 
@@ -50,7 +50,7 @@ const infoIntern = (data) => {
     `
     
     <div class="col-4-sm-12 ">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 25rem;">
                     <div class="card-header text-center"> 
                         <h5> Name </h5>
                         <h6> Intern </h6> 
@@ -93,7 +93,7 @@ const HTMLteamPage = (data) => {
             </div>
         </header>
 
-        <section class=" row justify-content-center">
+        <section class="row justify-content-center">
         { cards go here }
 
         </section>
