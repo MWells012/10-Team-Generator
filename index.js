@@ -66,14 +66,14 @@ function addManager() {
         },
     ]).then (data => {
         const manager = new Manager(data.managerName, data.managerID, data.managerEmail, data.officeNumber);
-        myTeam.push(manager);
+        theTeam.push(manager);
         
         addEmployee();
     })
 };
 
 function addEmployee() {
-    return inquirer.createPromptModule([
+    return inquirer.prompt([
         {
             type:"list",
             message: "What is this employee's position?",
@@ -136,9 +136,9 @@ function addEngineer() {
         {
             type: "input",
             message: "Github Username?",
-            name: "engineerGithub",
-            validate: engineerGithub => {
-                if(engineerGithub){
+            name: "internSchool",
+            validate: internSchool => {
+                if(internSchool){
                     return true;
                 } else {
                     console.log("This is mandatory, please try again.");
@@ -147,7 +147,7 @@ function addEngineer() {
             }
         },
     ]).then (data => {
-        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.engineerGithub, data.engineerID);
+        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.internSchool, data.engineerID);
         theTeam.push(engineer);
         menu();
     })
@@ -155,6 +155,64 @@ function addEngineer() {
 }
 
 function addIntern() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Name?",
+            name: "internName",
+            validate: internName => {
+                if(internName){
+                    return true;
+                } else {
+                    console.log("This is mandatory, please try again.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            message: "Intern ID Number?",
+            name: "internID",
+            validate: internID => {
+                if(internID){
+                    return true;
+                } else {
+                    console.log("This is mandatory, please try again.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            message: "Email?",
+            name: "internEmail",
+            validate: internEmail => {
+                if(internEmail){
+                    return true;
+                } else {
+                    console.log("This is mandatory, please try again.");
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            message: "What is their current University?",
+            name: "internSchool",
+            validate: internSchool => {
+                if(internSchool){
+                    return true;
+                } else {
+                    console.log("This is mandatory, please try again.");
+                    return false;
+                }
+            }
+        },
+    ]).then (data => {
+        const intern = new Intern(data.internName, data.internEmail, data.internSchool, data.internID);
+        theTeam.push(intern);
+        menu();
+    })
 
 }
 
