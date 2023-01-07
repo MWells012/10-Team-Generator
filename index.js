@@ -78,7 +78,7 @@ function addEmployee() {
             type:"list",
             message: "What is this employee's position?",
             name: "employeeRole",
-            choice: ["Engineer", "Intern"]
+            choices: ["Engineer", "Intern"]
         }
     ]).then (function(answers){
         switch(answers.employeeRole){
@@ -217,26 +217,26 @@ function addIntern() {
 }
 
 function menu() {
-    return inquirer.createPromptModule([
+    return inquirer.prompt([
         {
             type:"list",
             message: "Add another employee?",
             name:"addEmployee",
-            choices: ["Yes", "Nope"]
+            choices: ["Yes", "No"]
         }
     ]).then (function(answers) {
         switch(answers.addEmployee) {
             case "Yes":
-            addEmployee();
-            break;
-            case "Nope":
-                createTheTeam();
+                addEmployee();
+                break;
+            case "No":
+                createTeam();
                 break;
         }
     });
 };
 
-function createTheTeam() {
+function createTeam() {
     const renderHTML = HTMLteamPage(theTeam)
     fs.writeFile('./index.html', renderHTML, err => {
         if(err) {
