@@ -147,7 +147,7 @@ function addEngineer() {
             }
         },
     ]).then (data => {
-        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.internSchool, data.engineerID);
+        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.engineerSchool, data.engineerID);
         theTeam.push(engineer);
         menu();
     })
@@ -224,8 +224,8 @@ function menu() {
             name:"addEmployee",
             choices: ["Yes", "No"]
         }
-    ]).then (function(answers) {
-        switch(answers.addEmployee) {
+    ]).then (function(answers){
+        switch(answers.addEmployee){
             case "Yes":
                 addEmployee();
                 break;
@@ -233,19 +233,20 @@ function menu() {
                 createTeam();
                 break;
         }
-    });
+});
 };
 
 function createTeam() {
     const renderHTML = HTMLteamPage(theTeam)
-    fs.writeFile('./index.html', renderHTML, err => {
-        if(err) {
+    fs.writeFile('./index.html', renderHTML, err =>{
+        if(err){
             console.log(err);
             return;
-        } else {
-            console.log ("Your team has been successfully created and written into an index.html file.")
+        }else{
+            console.log("Success! Your team has been created in the index.html file")
         }
     })
+
 }
 
 addManager();
