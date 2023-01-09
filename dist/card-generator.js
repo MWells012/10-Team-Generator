@@ -34,14 +34,13 @@ const generateHTML = (data) => {
     
     <body>
     
-        <header>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container text-center">
-                    <h1>My Team</h1>
-                </div>
-            </div>
-            
-        </header>
+    <header>
+    <div class="jumbotron square">
+        <div class="container text-center">
+            <h2> The Team </h2>
+        </div>
+    </div>
+</header>
 <main class = "row justify-content-center">
 ${createCard(data)}
 </main>
