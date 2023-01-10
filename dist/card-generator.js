@@ -34,90 +34,93 @@ const generateHTML = (data) => {
     
     <body>
     
-    <header>
-    <div class="jumbotron square">
-        <div class="container text-center">
-            <h2> The Team </h2>
-        </div>
-    </div>
-</header>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container text-center">
+                    <h1 class="display-4">My Team</h1>
+                </div>
+            </div>
+            
+        </header>
+
 <main class = "row justify-content-center">
 ${createCard(data)}
 </main>
+
+
+
+
+
+
 </body>
 </html>
     `;
 };
 
 const infoManager = (data) => {
-    return 
-    `
-    
+    return `
     <div class="col-4-sm-12 ">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header text-center"> 
-                        <h5> Name </h5>
-                        <h6> Manager </h6> 
-                    </div>
-
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"> ID Number: </li>
-                            <li class="list-group-item"> Email: <a href="email@mail.com"> email@mail.com</a> </li>
-                            <li class="list-group-item"> Office Number: </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="card" style="width: 18rem;">
+        <div class = "card-header text-white">
+            <h5 class="card-title text-white">${data.getName()}</h5>
+            <h6 class="card-subtitle mb-2 text-white"><i class="fas fa-mug-hot"></i> Manager</h6>
+            
+        </div>
     
-    `
-}
-
-const infoEngineer = (data) => {
-    return
-    `
-    <div class="col-4-sm-12 ">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header text-center"> 
-                        <h5> Name </h5>
-                        <h6> Engineer </h6> 
-                    </div>
-
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"> ID Number: </li>
-                            <li class="list-group-item"> Email: <a href="email@mail.com"> email@mail.com</a> </li>
-                            <li class="list-group-item"> Office Number: </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Employee ID: ${data.id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                <li class="list-group-item">Office Number: ${data.officeNumber}</li>
+            </ul>
+        </div>
+    </div>
+</div>
     `
 }
 
 const infoIntern = (data) => {
-    return
-    `
-    
-    <div class="col-4-sm-12 ">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-header text-center"> 
-                        <h5> Name </h5>
-                        <h6> Intern </h6> 
-                    </div>
-
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"> ID Number: </li>
-                            <li class="list-group-item"> Email: <a href="email@mail.com"> email@mail.com</a> </li>
-                            <li class="list-group-item"> Office Number: </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    return `
+    <div class="col-4-sm-12">
+    <div class="card" style="width: 18rem;">
+        <div class = "card-header text-white">
+            <h5 class="card-title text-white">${data.getName()}</h5>
+            <h6 class="card-subtitle mb-2 text-whited"><i class="fas fa-graduation-cap"></i> Intern</h6>
             
-        `
+        </div>
+    
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Employee ID: ${data.id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                <li class="list-group-item">School: ${data.school}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    `
+}
+
+const infoEngineer = (data) => {
+    return `
+    <div class="col-4-sm-12 ">
+    <div class="card" style="width: 18rem;">
+        <div class = "card-header text-white">
+            <h5 class="card-title text-white">${data.getName()}</h5>
+            <h6 class="card-subtitle mb-2 text-white"><i class="fas fa-glasses"></i> Engineer</h6>
+            
+        </div>
+    
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Employee ID: ${data.id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                <li class="list-group-item">GitHub: <a href="https://github.com/${data.github}" target="_blank">${data.github}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    `
 }
 
 module.exports = generateHTML;

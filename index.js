@@ -5,7 +5,6 @@ const Manager = require ('./lib/manager');
 const Engineer = require ('./lib/engineer');
 const Intern = require ('./lib/intern');
 const HTMLteamPage = require ('./dist/card-generator');
-const { off } = require('process');
 
 const theTeam = [];
 
