@@ -26,3 +26,5 @@ To use this application one must clone the repository locally, run the command `
 Testing is crucial to making sure your code is maintainable, so tests have been written for all 4 'positions' and the tests will need to pass to move forward. To run the tests navigate to your terminal after you have installed all the dependencies and run the command `npm run test`. Your terminal will inform you if they all passed, or if they didn't pass what failed and where.
 
 # Mock-Up
+Video of Demonstration
+[https://drive.google.com/file/d/1_8pCSvXkVEuaM0RgJXmrykYiMlXoC8e7/view]
