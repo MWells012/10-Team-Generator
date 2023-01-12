@@ -36,13 +36,13 @@ const createIndex = (data) => {
         <header>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container text-center">
-                    <h1 class="display-4">My Team</h1>
+                    <h1 class="display-4">The Team</h1>
                 </div>
             </div>
             
         </header>
 
-<main class = "row justify-content-center">
+<main class = "row">
 ${createCard(data)}
 </main>
 </body>
@@ -57,7 +57,6 @@ const infoManager = (data) => {
         <div class = "card-header">
             <h5>${data.getName()}</h5>
             <h6> Manager</h6>
-            
         </div>
     
         <div>
