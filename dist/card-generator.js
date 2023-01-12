@@ -15,7 +15,7 @@ const createCard = data => {
     return employeeInfo;
 }
 
-const generateHTML = (data) => {
+const createIndex = (data) => {
     console.log(data)
 
     return `
@@ -28,7 +28,6 @@ const generateHTML = (data) => {
         <title>Team Generator</title>
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
         <link rel="stylesheet" href="./dist/style.css">
     </head>
     
@@ -46,12 +45,6 @@ const generateHTML = (data) => {
 <main class = "row justify-content-center">
 ${createCard(data)}
 </main>
-
-
-
-
-
-
 </body>
 </html>
     `;
@@ -61,13 +54,13 @@ const infoManager = (data) => {
     return `
     <div class="col-4-sm-12 ">
     <div class="card" style="width: 18rem;">
-        <div class = "card-header text-white">
-            <h5 class="card-title text-white">${data.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-white"><i class="fas fa-mug-hot"></i> Manager</h6>
+        <div class = "card-header">
+            <h5>${data.getName()}</h5>
+            <h6> Manager</h6>
             
         </div>
     
-        <div class="card-body">
+        <div>
             <ul class="list-group">
                 <li class="list-group-item">Employee ID: ${data.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
@@ -83,13 +76,13 @@ const infoIntern = (data) => {
     return `
     <div class="col-4-sm-12">
     <div class="card" style="width: 18rem;">
-        <div class = "card-header text-white">
-            <h5 class="card-title text-white">${data.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-whited"><i class="fas fa-graduation-cap"></i> Intern</h6>
+        <div class = "card-header">
+            <h5>${data.getName()}</h5>
+            <h6> Intern</h6>
             
         </div>
     
-        <div class="card-body">
+        <div>
             <ul class="list-group">
                 <li class="list-group-item">Employee ID: ${data.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
@@ -105,13 +98,13 @@ const infoEngineer = (data) => {
     return `
     <div class="col-4-sm-12 ">
     <div class="card" style="width: 18rem;">
-        <div class = "card-header text-white">
-            <h5 class="card-title text-white">${data.getName()}</h5>
-            <h6 class="card-subtitle mb-2 text-white"><i class="fas fa-glasses"></i> Engineer</h6>
+        <div class = "card-header">
+            <h5>${data.getName()}</h5>
+            <h6>Engineer</h6>
             
         </div>
     
-        <div class="card-body">
+        <div>
             <ul class="list-group">
                 <li class="list-group-item">Employee ID: ${data.id}</li>
                 <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
@@ -123,4 +116,4 @@ const infoEngineer = (data) => {
     `
 }
 
-module.exports = generateHTML;
+module.exports = createIndex;
