@@ -6,7 +6,6 @@
 - [Usage](#usage)
 - [Installation](#installation)
 - [Testing](#testing)
-- [Mock-Up](#mock-up)
 
 # Description
 This application is designed to have all the names and contact information for each member of your team render on a single html page for ease of access for their contact info and to have a roster of who is currently on the team. The data is complied through the answering of prompts in the terminal, this info is what is populated onto the info cards on the html page.
@@ -24,7 +23,3 @@ To use this application one must clone the repository locally, run the command `
 
 # Testing
 Testing is crucial to making sure your code is maintainable, so tests have been written for all 4 'positions' and the tests will need to pass to move forward. To run the tests navigate to your terminal after you have installed all the dependencies and run the command `npm run test`. Your terminal will inform you if they all passed, or if they didn't pass what failed and where.
-
-# Mock-Up
-Video of Demonstration
-[https://drive.google.com/file/d/1_8pCSvXkVEuaM0RgJXmrykYiMlXoC8e7/view]
