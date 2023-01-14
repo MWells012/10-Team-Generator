@@ -1,11 +1,12 @@
 .jumbotron {
     background-color: rgb(140, 152, 119);
-    color: white;
+    color: black;
 }
 
 .card {
     background-color: beige;
-    margin: 5rem;
+    margin: 3rem;
+    width: 20rem;
 }
 
 .card-header {

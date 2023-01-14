@@ -32,14 +32,12 @@ const createIndex = (data) => {
     </head>
     
     <body>
-    
         <header>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container text-center">
-                    <h1 class="display-4">The Team</h1>
+                    <h1>The Team</h1>
                 </div>
             </div>
-            
         </header>
 
 <main class = "row">
@@ -53,10 +51,10 @@ ${createCard(data)}
 const infoManager = (data) => {
     return `
     <div class="col-4-sm-12 ">
-        <div class="card" style="width: 20rem;">
-            <div class = "card-header">
-                <h5>${data.getName()}</h5>
-                <h6> Manager</h6>
+        <div class="card">
+            <div class ="card-header">
+                <h5> Manager</h5>
+                <h6>${data.getName()}</h6>
             </div>
         
             <div>
@@ -74,11 +72,10 @@ const infoManager = (data) => {
 const infoIntern = (data) => {
     return `
     <div class="col-4-sm-12">
-        <div class="card" style="width: 20rem;">
-            <div class = "card-header">
-                <h5>${data.getName()}</h5>
-                <h6> Intern</h6>
-                
+        <div class="card">
+            <div class ="card-header">
+                <h5> Intern</h5>
+                <h6>${data.getName()}</h6>
             </div>
         
             <div>
@@ -96,11 +93,10 @@ const infoIntern = (data) => {
 const infoEngineer = (data) => {
     return `
     <div class="col-4-sm-12 ">
-        <div class="card" style="width: 20rem;">
-            <div class = "card-header">
-                <h5>${data.getName()}</h5>
-                <h6>Engineer</h6>
-                
+        <div class="card">
+            <div class ="card-header">
+                <h5>Engineer</h5>
+                <h6>${data.getName()}</h6>
             </div>
         
             <div>
