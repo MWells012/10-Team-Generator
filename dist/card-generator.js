@@ -53,65 +53,65 @@ ${createCard(data)}
 const infoManager = (data) => {
     return `
     <div class="col-4-sm-12 ">
-    <div class="card" style="width: 18rem;">
-        <div class = "card-header">
-            <h5>${data.getName()}</h5>
-            <h6> Manager</h6>
-        </div>
-    
-        <div>
-            <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${data.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                <li class="list-group-item">Office Number: ${data.officeNumber}</li>
-            </ul>
+        <div class="card" style="width: 20rem;">
+            <div class = "card-header">
+                <h5>${data.getName()}</h5>
+                <h6> Manager</h6>
+            </div>
+        
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">Employee ID: ${data.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                    <li class="list-group-item">Office Number: ${data.officeNumber}</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
     `
 }
 
 const infoIntern = (data) => {
     return `
     <div class="col-4-sm-12">
-    <div class="card" style="width: 18rem;">
-        <div class = "card-header">
-            <h5>${data.getName()}</h5>
-            <h6> Intern</h6>
-            
-        </div>
-    
-        <div>
-            <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${data.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                <li class="list-group-item">School: ${data.school}</li>
-            </ul>
+        <div class="card" style="width: 20rem;">
+            <div class = "card-header">
+                <h5>${data.getName()}</h5>
+                <h6> Intern</h6>
+                
+            </div>
+        
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">Employee ID: ${data.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                    <li class="list-group-item">School: ${data.school}</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
     `
 }
 
 const infoEngineer = (data) => {
     return `
     <div class="col-4-sm-12 ">
-    <div class="card" style="width: 18rem;">
-        <div class = "card-header">
-            <h5>${data.getName()}</h5>
-            <h6>Engineer</h6>
-            
-        </div>
-    
-        <div>
-            <ul class="list-group">
-                <li class="list-group-item">Employee ID: ${data.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                <li class="list-group-item">GitHub: <a href="https://github.com/${data.github}" target="_blank">${data.github}</a></li>
-            </ul>
+        <div class="card" style="width: 20rem;">
+            <div class = "card-header">
+                <h5>${data.getName()}</h5>
+                <h6>Engineer</h6>
+                
+            </div>
+        
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item">Employee ID: ${data.id}</li>
+                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
+                    <li class="list-group-item">GitHub: <a href="https://github.com/${data.GithubID}" target="_blank">${data.GithubID}</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
     `
 }
 

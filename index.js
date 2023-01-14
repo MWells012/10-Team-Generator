@@ -135,9 +135,9 @@ function addEngineer() {
         {
             type: "input",
             message: "Github Username?",
-            name: "internSchool",
-            validate: internSchool => {
-                if(internSchool){
+            name: "engineerGithub",
+            validate: engineerGithub => {
+                if(engineerGithub){
                     return true;
                 } else {
                     console.log("This is mandatory, please try again.");
@@ -146,7 +146,7 @@ function addEngineer() {
             }
         },
     ]).then (data => {
-        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.engineerSchool, data.engineerID);
+        const engineer = new Engineer(data.engineerName, data.engineerEmail, data.engineerGithub, data.engineerID);
         theTeam.push(engineer);
         menu();
     })
