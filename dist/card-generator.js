@@ -15,7 +15,7 @@ const createCard = data => {
     return employeeInfo;
 }
 
-const createIndex = (data) => {
+const createHTML = (data) => {
     console.log(data)
 
     return `
@@ -87,4 +87,4 @@ const infoEngineer = (data) => {
     `
 }
 
-module.exports = createIndex;
+module.exports = createHTML;
