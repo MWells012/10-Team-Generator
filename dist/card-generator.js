@@ -56,14 +56,6 @@ const infoManager = (data) => {
                 <h5> Manager</h5>
                 <h6>${data.getName()}</h6>
             </div>
-        
-            <div>
-                <ul class="list-group">
-                    <li class="list-group-item">Employee ID: ${data.id}</li>
-                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                    <li class="list-group-item">Office Number: ${data.officeNumber}</li>
-                </ul>
-            </div>
         </div>
     </div>
     `
@@ -77,14 +69,6 @@ const infoIntern = (data) => {
                 <h5> Intern</h5>
                 <h6>${data.getName()}</h6>
             </div>
-        
-            <div>
-                <ul class="list-group">
-                    <li class="list-group-item">Employee ID: ${data.id}</li>
-                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                    <li class="list-group-item">School: ${data.school}</li>
-                </ul>
-            </div>
         </div>
     </div>
     `
@@ -97,14 +81,6 @@ const infoEngineer = (data) => {
             <div class ="card-header">
                 <h5>Engineer</h5>
                 <h6>${data.getName()}</h6>
-            </div>
-        
-            <div>
-                <ul class="list-group">
-                    <li class="list-group-item">Employee ID: ${data.id}</li>
-                    <li class="list-group-item">Email: <a href="mailto:${data.email}">${data.email}</a></li>
-                    <li class="list-group-item">GitHub: <a href="https://github.com/${data.GithubID}" target="_blank">${data.GithubID}</a></li>
-                </ul>
             </div>
         </div>
     </div>
